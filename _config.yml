@@ -1,0 +1,61 @@
+# Network Security Monitor Documentation
+# GitHub Pages configuration
+
+title: Network Security Monitor
+description: Comprehensive security monitoring platform with AI-powered threat analysis
+baseurl: "/network-security-monitor-docs"
+url: "https://garrigueta.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Theme
+theme: minima
+
+# Navigation
+header_pages:
+  - index.md
+  - getting-started.md
+  - components.md
+  - installation.md
+  - configuration.md
+  - api-reference.md
+  - dashboards.md
+  - troubleshooting.md
+  - contributing.md
+
+# Collections
+collections:
+  guides:
+    output: true
+    permalink: /:collection/:name/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO
+author: garrigueta
+twitter:
+  username: garrigueta
+social:
+  name: Network Security Monitor
+  links:
+    - https://github.com/garrigueta/network-security-monitor
+
+# Exclude files
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
