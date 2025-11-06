@@ -22,6 +22,9 @@ kramdown:
 # Theme
 remote_theme: pages-themes/hacker@v0.2.0
 
+# Repository information for GitHub Pages
+repository: garrigueta/network-security-monitor-docs
+
 # Navigation
 header_pages:
   - index.md
