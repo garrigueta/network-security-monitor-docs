@@ -6,6 +6,11 @@ description: Comprehensive security monitoring platform with AI-powered threat a
 baseurl: "/network-security-monitor-docs"
 url: "https://garrigueta.github.io"
 
+# Theme settings
+show_downloads: true
+github:
+  is_project_page: true
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
@@ -15,7 +20,7 @@ kramdown:
   syntax_highlighter: rouge
 
 # Theme
-theme: minima
+remote_theme: pages-themes/hacker@v0.2.0
 
 # Navigation
 header_pages:
@@ -40,6 +45,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 # SEO
 author: garrigueta

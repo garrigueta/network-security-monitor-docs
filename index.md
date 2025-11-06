@@ -1,17 +1,15 @@
 ---
 layout: default
-title: Home
-nav_order: 1
+title: Network Security Monitor
 ---
 
 # Network Security Monitor
 
 A comprehensive security monitoring platform designed to detect, analyze, and respond to network threats through automated intelligence gathering and real-time analysis.
 
-{: .fs-6 .fw-300 }
+## 🚀 Quick Start
 
-[Get started now](getting-started.html){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View on GitHub](https://github.com/garrigueta/network-security-monitor){: .btn .fs-5 .mb-4 .mb-md-0 }
+**[Get Started](getting-started.html)** | **[View on GitHub](https://github.com/garrigueta/network-security-monitor)**
 
 ---
 

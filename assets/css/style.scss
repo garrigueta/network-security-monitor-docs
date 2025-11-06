@@ -1,0 +1,113 @@
+---
+---
+
+@import url("https://pages-themes.github.io/hacker/assets/css/style.css");
+
+/* Custom styles for Network Security Monitor */
+
+/* Enhanced terminal-style code blocks */
+pre {
+  background: #0d1117 !important;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #c9d1d9;
+}
+
+code {
+  background: #161b22;
+  color: #79c0ff;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+/* Security-themed accent colors */
+.highlight {
+  background: #0d1117;
+}
+
+/* Enhanced table styling */
+table {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  margin: 1em 0;
+}
+
+th {
+  background: #21262d;
+  color: #f0f6fc;
+  border-bottom: 1px solid #30363d;
+}
+
+td {
+  border-bottom: 1px solid #21262d;
+  color: #c9d1d9;
+}
+
+/* Alert boxes for security notices */
+.security-alert {
+  background: #1a1a1a;
+  border-left: 4px solid #ff6b6b;
+  padding: 12px;
+  margin: 16px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.security-tip {
+  background: #1a1a1a;
+  border-left: 4px solid #4ecdc4;
+  padding: 12px;
+  margin: 16px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.security-warning {
+  background: #1a1a1a;
+  border-left: 4px solid #ffe66d;
+  padding: 12px;
+  margin: 16px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Navigation enhancement */
+#downloads .btn {
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+#downloads .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3);
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #484f58;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  #downloads .btn {
+    display: block;
+    margin: 5px 0;
+    text-align: center;
+  }
+}
