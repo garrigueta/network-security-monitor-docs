@@ -11,34 +11,30 @@ The Network Security Monitor consists of nine integrated services that work toge
 ## Architecture Overview
 
 ```mermaid
-graph TB
-    subgraph "Data Collection Layer"
-        A[Zeek Network Analyzer]
-        B[Heralding Honeypot]
-        C[Node Exporter]
-        D[Crypto Exporter]
+flowchart LR
+    subgraph Sources
+        Zeek
+        Honeypot
+        Metrics
     end
     
-    subgraph "Storage & Processing Layer"
-        E[Promtail Log Shipper]
-        F[Loki Log Storage]
-        G[Prometheus Metrics DB]
+    subgraph Storage
+        Loki
+        Prometheus
     end
     
-    subgraph "Analysis & Visualization Layer"
-        H[Grafana Dashboards]
-        I[AI Agent]
+    subgraph Analysis
+        Grafana
+        AI[AI Agent]
     end
     
-    A --> E
-    B --> E
-    C --> G
-    D --> G
-    E --> F
-    F --> H
-    G --> H
-    F --> I
-    G --> I
+    Zeek --> Loki
+    Honeypot --> Loki
+    Metrics --> Prometheus
+    
+    Loki --> Grafana
+    Prometheus --> Grafana
+    Loki --> AI
 ```
 
 ## Core Components
@@ -288,16 +284,15 @@ graph TB
 ### Service Dependencies
 
 ```mermaid
-graph TD
-    A[Storage] --> B[Loki]
-    A --> C[Prometheus]
-    B --> D[AI Agent]
-    C --> D
-    B --> E[Grafana]
-    C --> E
-    F[Promtail] --> B
-    G[Node Exporter] --> C
-    H[Crypto Exporter] --> C
+flowchart LR
+    Promtail --> Loki
+    NodeExporter --> Prometheus
+    CryptoExporter --> Prometheus
+    
+    Loki --> AIAgent
+    Prometheus --> AIAgent
+    Loki --> Grafana
+    Prometheus --> Grafana
 ```
 
 ## Resource Requirements

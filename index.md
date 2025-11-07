@@ -56,25 +56,17 @@ The platform operates in three integrated layers:
 ## Architecture Overview
 
 ```mermaid
-graph TB
-    A[Network Traffic] --> B[Zeek Network Analyzer]
-    C[Attackers] --> D[Heralding Honeypot]
-    E[System Metrics] --> F[Node Exporter]
+flowchart LR
+    Traffic[Network Traffic] --> Zeek[Zeek]
+    Attackers[Attackers] --> Honeypot[Honeypot]
     
-    B --> G[Promtail]
-    D --> G
-    F --> H[Prometheus]
+    Zeek --> Logs[Log Storage]
+    Honeypot --> Logs
     
-    G --> I[Loki Log Storage]
-    H --> J[Metrics Storage]
+    Logs --> Grafana[Dashboards]
+    Logs --> AI[AI Analysis]
     
-    I --> K[Grafana Dashboards]
-    J --> K
-    I --> L[AI Agent]
-    
-    L --> M[Security Reports]
-    L --> N[Threat Analysis]
-    L --> O[REST API]
+    AI --> Reports[Security Reports]
 ```
 
 ## Quick Start
