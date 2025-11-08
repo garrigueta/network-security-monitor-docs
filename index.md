@@ -52,8 +52,9 @@ The platform operates in three integrated layers:
 
 ### 3. Analysis and Visualization Layer
 - **Grafana dashboards** provide real-time views of security events, network patterns, and system health
-- **AI Agent** (OpenAI-powered) analyzes aggregated logs to identify threats, generate security reports, and provide natural language insights
-- Scheduled reports run every 5 hours, with on-demand API access available
+- **AI Agent** (Ollama LLM-powered) analyzes aggregated logs to identify threats, generate security reports, and provide natural language insights
+- Automated attack pattern detection across all data sources
+- Scheduled reports with on-demand API access available
 
 ## Architecture Overview
 
@@ -95,4 +96,5 @@ This will build all container images and deploy the Helm chart to your Kubernete
 - [Configuration](configuration.html) - Customize your deployment
 - [Components](components.html) - Learn about each system component
 - [Dashboards](dashboards.html) - Explore the security visualizations
+- [AI Agent](ai-agent.html) - AI-powered threat analysis and automation
 - [API Reference](api-reference.html) - Integrate with your tools
