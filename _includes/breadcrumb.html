@@ -1,4 +1,4 @@
-{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+{% assign crumbs = page.url | remove:'/index.html' | remove: '.html' | split: '/' %}
 <nav class="breadcrumb">
   <a href="{{ site.baseurl }}/">Home</a>
   {% assign crumb_path = "" %}
@@ -10,7 +10,7 @@
         <span class="current">{{ page.title | default: crumb | replace: '-', ' ' | capitalize }}</span>
       {% else %}
         <span class="separator">›</span>
-        <a href="{{ site.baseurl }}{{ crumb_path }}/">{{ crumb | replace: '-', ' ' | capitalize }}</a>
+        <a href="{{ site.baseurl }}{{ crumb_path }}">{{ crumb | replace: '-', ' ' | capitalize }}</a>
       {% endif %}
     {% endif %}
   {% endfor %}
