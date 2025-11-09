@@ -30,9 +30,7 @@
     </header>
 
     <div class="container">
-      {% if page.url != "/" and page.url != "/index.html" %}
-        {% include sidebar.html %}
-      {% endif %}
+      {% include sidebar.html %}
       <section id="main_content">
         {% if page.url != "/" and page.url != "/index.html" %}
           {% include breadcrumb.html %}
