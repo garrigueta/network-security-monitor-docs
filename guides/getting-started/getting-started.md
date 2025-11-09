@@ -112,8 +112,8 @@ curl -X POST http://<NODE_IP>:8080/reports/generate \
 
 Once your system is running:
 
-1. **Configure your network interface** - See [Configuration](configuration.html)
-2. **Set up OpenAI API key** - Required for AI analysis
+1. **Configure your network interface** - See [Configuration](../deployment/configuration.html)
+2. **Explore the dashboards** - View [Dashboards](../monitoring/dashboards.html)
 3. **Customize dashboards** - Adapt to your environment
 4. **Set up alerts** - Configure notification channels
 5. **Review security reports** - Start analyzing your network
@@ -130,7 +130,7 @@ If dashboards show no data:
 ### AI Agent Not Responding
 
 If the AI Agent isn't working:
-1. Verify OpenAI API key is configured
+1. Verify Ollama server is accessible
 2. Check pod logs: `kubectl logs -n network-security <ai-agent-pod>`
 3. Ensure Loki has log data available
 
@@ -143,7 +143,7 @@ If you encounter storage problems:
 
 ## Getting Help
 
-- **Troubleshooting Guide**: [troubleshooting.html](troubleshooting.html)
-- **Configuration Details**: [configuration.html](configuration.html)
-- **API Documentation**: [api-reference.html](api-reference.html)
+- **Troubleshooting Guide**: [../../troubleshooting.html](../../troubleshooting.html)
+- **Configuration Details**: [../deployment/configuration.html](../deployment/configuration.html)
+- **API Documentation**: [../api/api-reference.html](../api/api-reference.html)
 - **GitHub Issues**: [Report a bug](https://github.com/garrigueta/network-security-monitor/issues)
