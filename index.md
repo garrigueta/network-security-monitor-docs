@@ -80,11 +80,25 @@ make all
 
 This will build all container images and deploy the Helm chart to your Kubernetes cluster.
 
-## What's Next?
+## Documentation Index
 
+### Getting Started
 - [Installation Guide](installation.html) - Complete setup instructions
+- [Getting Started](getting-started.html) - Quick start tutorial
 - [Configuration](configuration.html) - Customize your deployment
+
+### System Overview
+- [Features Overview](features.html) - **NEW:** Complete functionality index with 20+ features
+- [Architecture](architecture.html) - **NEW:** System architecture and data flow
 - [Components](components.html) - Learn about each system component
 - [Dashboards](dashboards.html) - Explore the security visualizations
+
+### API & Integration
+- [API Endpoints](endpoints.html) - **NEW:** Complete endpoint reference with examples
+- [API Reference](api-reference.html) - Integration examples and client libraries
 - [AI Agent](ai-agent.html) - AI-powered threat analysis and automation
-- [API Reference](api-reference.html) - Integrate with your tools
+- [AI Agent API](ai-agent-api.html) - AI Agent specific API documentation
+
+### Operations
+- [Troubleshooting](troubleshooting.html) - Common issues and solutions
+- [Contributing](contributing.html) - How to contribute

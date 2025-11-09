@@ -14,185 +14,123 @@ The Network Security Monitor includes a comprehensive set of pre-built Grafana d
 2. **Login**: Use admin/admin (change password on first login)
 3. **Browse Dashboards**: Go to **Dashboards** → **Browse**
 
-## Dashboard Categories
+## Available Dashboards
 
-### Network Security Dashboards
+### 1. Executive Security Dashboard
 
-#### Zeek Security Overview
-The primary security dashboard providing a high-level view of network threats and anomalies.
+**Purpose**: High-level security overview with AI-powered executive summaries
 
 **Key Panels:**
-- **Threat Alerts**: Real-time security alerts and suspicious activities
-- **Traffic Patterns**: Network flow analysis and anomaly detection
-- **Protocol Distribution**: Breakdown of network protocols and services
-- **Geographic Attack Sources**: World map showing attack origins
-- **Security Events Timeline**: Chronological view of security incidents
+- **Network Activity (6h)**: Zeek event count for connections, DNS, HTTP, and SSL
+- **Network Events (6h)**: Total network events from all Zeek logs
+- **CPU Usage**: System CPU utilization percentage
+- **Memory Usage**: System memory utilization percentage
+- **Security Events Rate**: Real-time event rate by log type
+- **Network Traffic**: Network interface RX/TX throughput
+- **Executive AI Security Report**: Embedded AI-generated executive summary
+
+**Target Audience**: Executives, management, security leadership
+
+**Refresh Rate**: 30 seconds  
+**Default Time Range**: Last 6 hours
 
 **Use Cases:**
-- Daily security operations monitoring
-- Incident response coordination
-- Executive security reporting
-- Trend analysis over time
+- Executive briefings
+- Security posture assessment
+- High-level threat visibility
+- Quick security status checks
 
-**Metrics Displayed:**
-- Total connections per hour
-- Security alerts by severity
-- Top talking hosts
-- Suspicious DNS queries
-- SSL/TLS certificate anomalies
+**AI Report Features:**
+- Security score (0-100)
+- Threat level assessment (LOW/MEDIUM/HIGH/CRITICAL)
+- Key security findings
+- Actionable recommendations
+- Updated every 4 hours at :30
 
-#### Zeek Connection Analysis
-Detailed network connection monitoring and flow analysis.
+### 2. Network Security Analysis Dashboard
 
-**Key Panels:**
-- **Connection States**: TCP connection state distribution
-- **Bandwidth Utilization**: Real-time network throughput
-- **Service Discovery**: Detected network services and ports
-- **Connection Duration**: Long-running connection analysis
-- **Failed Connections**: Connection attempt failures
-
-**Drill-down Capabilities:**
-- Click on IP addresses to see detailed connection logs
-- Filter by time range, protocol, or service
-- Examine specific connection pairs
-
-#### Zeek DNS Security Analysis
-Comprehensive DNS monitoring for threat detection.
+**Purpose**: Detailed Zeek network traffic analysis with AI-powered insights
 
 **Key Panels:**
-- **DNS Query Types**: Distribution of query types (A, AAAA, MX, etc.)
-- **Suspicious Domains**: Domains flagged by threat intelligence
-- **DNS Tunneling Detection**: Unusual DNS query patterns
-- **Query Response Analysis**: Response codes and failures
-- **DNS Over HTTPS (DoH) Detection**: Encrypted DNS traffic
 
-**Security Features:**
-- Domain reputation scoring
-- DNS exfiltration detection
-- Command and control identification
-- Subdomain analysis
+**Statistics (6 panels):**
+- **Total Events**: All Zeek events in last hour
+- **Connections**: TCP/UDP connection count
+- **DNS Queries**: DNS lookup activity
+- **SSL/TLS**: Secure connection count
+- **HTTP Traffic**: Web traffic volume
+- **Anomalies**: Weird events detected by Zeek
 
-#### Zeek SSL/TLS Analysis
-Certificate and encryption protocol monitoring.
+**Time Series (2 panels):**
+- **Events Rate**: Event rate trends by log type
+- **Top Log Types**: Most active log categories
 
-**Key Panels:**
-- **Certificate Validation**: Valid vs. invalid certificates
-- **Encryption Protocols**: TLS version distribution
-- **Certificate Authorities**: CA usage statistics
-- **Certificate Expiration**: Upcoming certificate renewals
-- **Cipher Suite Analysis**: Encryption strength assessment
+**Log Viewers (4 panels):**
+- **Connection Logs**: Recent TCP/UDP connections
+- **DNS Logs**: DNS query and response logs
+- **HTTP Logs**: Web request logs
+- **SSL/TLS Logs**: Certificate and handshake logs
 
-**Security Monitoring:**
-- Self-signed certificate detection
-- Weak encryption identification
-- Certificate chain validation
-- Man-in-the-middle detection
+**AI Analysis:**
+- **Network Security AI Report**: Embedded AI-generated network-specific analysis
+- Updated every 3 hours at :15
 
-### Attack Detection Dashboards
+**Target Audience**: Security analysts, network engineers, SOC teams
 
-#### Honeypot Attack Overview
-Comprehensive view of attack attempts captured by honeypots.
+**Refresh Rate**: 30 seconds  
+**Default Time Range**: Last 6 hours
 
-**Key Panels:**
-- **Attack Timeline**: Chronological attack visualization
-- **Attack Sources**: Geographic and IP-based attacker mapping
-- **Protocol Distribution**: Breakdown of targeted services
-- **Credential Analysis**: Most commonly attempted passwords
-- **Attack Patterns**: Behavioral analysis of attack campaigns
+**Use Cases:**
+- Network traffic analysis
+- Protocol-level investigation
+- Attack pattern detection
+- Security incident investigation
 
-**Interactive Elements:**
-- Click on countries to filter attacks by region
-- Drill down into specific attack sessions
-- Export attack data for threat intelligence
+**Log Types Available:**
+- `conn`: TCP/UDP/ICMP connections
+- `dns`: DNS queries and responses
+- `http`: HTTP requests and responses
+- `ssl`: SSL/TLS handshakes and certificates
+- `ssh`: SSH connections
+- `files`: File transfers
+- `weird`: Anomalous events
+- `notice`: Zeek notices and alerts
+- `x509`: X.509 certificates
+- And 9+ more log types
 
-**Honeypot Types Monitored:**
-- SSH honeypots (Cowrie)
-- HTTP/HTTPS honeypots
-- FTP honeypots
-- Telnet honeypots
-- SMB honeypots
+### 3. Cluster Control Plane Dashboard
 
-#### AI Security Reports
-AI-powered threat analysis and automated reporting.
+**Purpose**: Kubernetes cluster health and operational monitoring
 
 **Key Panels:**
-- **Threat Severity**: AI-assessed risk levels
-- **Attack Classification**: Automated categorization of threats
-- **Anomaly Detection**: Machine learning-based unusual activity
-- **Predictive Alerts**: AI-predicted security risks
-- **Threat Intelligence**: External threat feed correlation
+- **Pod Status**: Running, pending, failed pod counts
+- **Container Restarts**: Restart frequency by pod
+- **CPU Usage**: Cluster CPU utilization
+- **Memory Usage**: Cluster memory utilization
+- **Network I/O**: Cluster network throughput
+- **Disk I/O**: Storage performance metrics
+- **OOM Events**: Out-of-memory incidents
+- **Error Logs**: Kubernetes error log stream
+- **Kubernetes Health AI Report**: AI-generated cluster health analysis
 
-**AI Features:**
-- Natural language threat summaries
-- Automated incident correlation
-- Risk scoring and prioritization
-- Trend prediction and forecasting
+**Target Audience**: DevOps engineers, SRE teams, platform engineers
 
-### System Performance Dashboards
+**Refresh Rate**: 30 seconds  
+**Default Time Range**: Last 6 hours
 
-#### SSD I/O Monitoring
-Storage performance metrics for the monitoring infrastructure.
-
-**Key Panels:**
-- **Disk I/O Operations**: Read/write operations per second
-- **I/O Latency**: Storage response times
-- **Queue Depth**: Storage queue utilization
-- **Throughput**: Data transfer rates
-- **Error Rates**: Storage error monitoring
-
-**Performance Optimization:**
-- Identify I/O bottlenecks
-- Monitor storage health
-- Optimize log rotation
+**Use Cases:**
+- Cluster health monitoring
+- Resource utilization tracking
+- Pod troubleshooting
 - Capacity planning
+- Performance optimization
 
-#### SSD Storage Monitoring
-Storage capacity and utilization tracking.
-
-**Key Panels:**
-- **Disk Usage**: Available vs. used storage
-- **Growth Rates**: Storage consumption trends
-- **File System Health**: Inode usage and fragmentation
-- **Mount Point Status**: Storage availability
-- **Retention Compliance**: Data lifecycle management
-
-**Capacity Planning:**
-- Predict storage needs
-- Monitor retention policies
-- Optimize storage allocation
-- Alert on space constraints
-
-### Network Analysis Dashboards
-
-#### Zeek Complete Analysis
-Comprehensive network analysis combining all Zeek data sources.
-
-**Key Panels:**
-- **Protocol Stack**: Layer 2-7 protocol analysis
-- **Application Identification**: Deep packet inspection results
-- **File Transfer Analysis**: File downloads and uploads
-- **Tunnel Detection**: VPN and tunneling protocol identification
-- **Network Baseline**: Normal vs. anomalous behavior
-
-**Advanced Features:**
-- Behavioral analysis
-- Protocol anomaly detection
-- Application fingerprinting
-- Network topology mapping
-
-#### Crypto Prices (Optional)
-Cryptocurrency price monitoring for ransomware correlation.
-
-**Key Panels:**
-- **Bitcoin Price**: BTC price trends
-- **Ethereum Price**: ETH price movements
-- **Market Correlation**: Price vs. attack correlation
-- **Volatility Analysis**: Market stability metrics
-
-**Security Context:**
-- Correlate ransomware activity with crypto prices
-- Identify payment deadline patterns
-- Track cryptocurrency-related threats
+**AI Report Features:**
+- Cluster health score
+- OOM event analysis
+- Error categorization
+- Resource optimization recommendations
+- Updated every 3 hours at :00
 
 ## Dashboard Customization
 
@@ -207,14 +145,23 @@ Cryptocurrency price monitoring for ransomware correlation.
 
 **Loki Log Queries (LogQL):**
 ```
-# SSH brute force attempts
-{job="honeypot"} |= "ssh" |= "authentication" |= "failed"
+# Zeek connection logs
+{job="zeek", log_type="conn"} | json
 
-# Suspicious DNS queries
-{job="zeek"} |= "dns.log" | json | line_format "{{.query}}" |= "suspicious"
+# DNS queries
+{job="zeek", log_type="dns"} | json
 
-# High-volume connections
-{job="zeek"} |= "conn.log" | json | duration > 1h
+# HTTP requests
+{job="zeek", log_type="http"} | json
+
+# SSL/TLS connections
+{job="zeek", log_type="ssl"} | json
+
+# Honeypot events (Heralding)
+{job="ai-agent"} |= "heralding"
+
+# AI agent analysis logs
+{job="ai-agent"} |= "report" | json
 ```
 
 **Prometheus Metric Queries (PromQL):**
@@ -237,8 +184,8 @@ Create custom alerts for security events:
    ```json
    {
      "alert": {
-       "name": "High Attack Volume",
-       "message": "Unusually high number of attacks detected",
+       "name": "High Network Event Rate",
+       "message": "Unusually high number of network events detected",
        "frequency": "1m",
        "conditions": [
          {
@@ -246,7 +193,7 @@ Create custom alerts for security events:
              "model": "A",
              "queryType": "",
              "refId": "A",
-             "expr": "rate(honeypot_attacks_total[5m]) > 10"
+             "expr": "rate({job=\"zeek\"}[5m]) > 1000"
            }
          }
        ]
@@ -269,9 +216,9 @@ Use variables for dynamic filtering:
   "templating": {
     "list": [
       {
-        "name": "interface",
+        "name": "log_type",
         "type": "query",
-        "query": "label_values(zeek_connections_total, interface)",
+        "query": "label_values({job=\"zeek\"}, log_type)",
         "multi": false
       },
       {

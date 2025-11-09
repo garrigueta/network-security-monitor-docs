@@ -35,7 +35,7 @@ This guide provides detailed installation instructions for the Network Security 
 
 - **Monitoring Interface**: Dedicated network interface for Zeek
 - **Internet Access**: For pulling container images
-- **OpenAI API**: Required for AI-powered analysis
+- **Ollama Server**: Local LLM server for AI-powered analysis (separate host recommended)
 
 ## Installation Methods
 
@@ -103,8 +103,7 @@ This builds custom images for:
 helm install nsm ./helm-chart/network-security-monitor \
   --namespace network-security \
   --create-namespace \
-  --set zeek.interface=eth1 \
-  --set ai-agent.openai.apiKey=your-api-key
+  --set zeek.interface=eth1
 ```
 
 #### Step 5: Verify Deployment
@@ -148,14 +147,15 @@ zeek:
   interface: eth1  # Change to your monitoring interface
 ```
 
-#### 2. OpenAI API Key
+#### 2. Ollama Connection
 
-Configure AI Agent authentication:
+Configure AI Agent to connect to your Ollama server:
 
 ```yaml
 ai-agent:
-  openai:
-    apiKey: "your-openai-api-key"
+  env:
+    - name: OLLAMA_BASE_URL
+      value: "http://192.168.1.132:11434"  # Your Ollama server address
 ```
 
 #### 3. Storage Paths
@@ -363,10 +363,11 @@ kubectl exec -n network-security $(kubectl get pods -n network-security -l app=z
 
 #### AI Agent API Key Issues
 
-Check the secret configuration:
+Check the Ollama connection:
 
 ```bash
-kubectl get secret -n network-security openai-api-key -o yaml
+# Verify AI agent can reach Ollama
+kubectl logs -n network-security deployment/ai-agent | grep -i ollama
 ```
 
 ### Getting Help
