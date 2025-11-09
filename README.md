@@ -39,7 +39,7 @@ Visit the documentation site: **https://garrigueta.github.io/network-security-mo
 
 ## 📁 Documentation Structure
 
-The documentation is organized into logical sections with sidebar navigation and breadcrumbs. See [STRUCTURE.md](STRUCTURE.md) for detailed folder organization.
+The documentation is organized into logical sections with sidebar navigation. See [STRUCTURE.md](STRUCTURE.md) for detailed folder organization.
 
 ## 🛠 Local Development
 

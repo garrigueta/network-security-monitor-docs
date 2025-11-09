@@ -32,8 +32,7 @@ network-security-monitor-docs/
 │       ├── endpoints.md
 │       └── api-reference.md
 ├── _includes/
-│   ├── sidebar.html           # Sidebar navigation
-│   └── breadcrumb.html        # Breadcrumb navigation
+│   └── sidebar.html           # Sidebar navigation
 ├── _layouts/
 │   └── default.html           # Main layout with sidebar
 └── assets/
@@ -44,17 +43,12 @@ network-security-monitor-docs/
 ## 🎯 Navigation Features
 
 ### 1. **Sidebar Navigation**
-- Appears on all documentation pages (except homepage)
+- Appears on all documentation pages including homepage
 - Organized by logical sections with emoji icons
 - Sticky positioning for easy access while scrolling
 - Mobile-responsive (hidden on small screens)
 
-### 2. **Breadcrumb Navigation**
-- Shows current location in documentation hierarchy
-- Clickable path for easy navigation back to parent sections
-- Styled to match the terminal/hacker theme
-
-### 3. **Section Organization**
+### 2. **Section Organization**
 
 #### 🚀 Getting Started (4 pages)
 - Quick Start Guide
@@ -113,8 +107,8 @@ The permalink structure preserves the file path:
 - Security-themed styling
 
 ### Responsive Design
-- Desktop: Full sidebar + breadcrumbs
-- Tablet/Mobile: Breadcrumbs only (sidebar hidden)
+- Desktop: Full sidebar navigation
+- Tablet/Mobile: Sidebar hidden on small screens
 - Mobile-first approach
 
 ### Accessibility

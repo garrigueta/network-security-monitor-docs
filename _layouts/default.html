@@ -32,9 +32,6 @@
     <div class="container">
       {% include sidebar.html %}
       <section id="main_content">
-        {% if page.url != "/" and page.url != "/index.html" %}
-          {% include breadcrumb.html %}
-        {% endif %}
         {{ content }}
       </section>
     </div>
