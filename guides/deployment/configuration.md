@@ -691,6 +691,6 @@ echo "Configuration validation complete"
 After configuring your deployment:
 
 1. [Review the installation guide](installation.html) to deploy with your configuration
-2. [Explore the dashboards](dashboards.html) to verify everything is working
-3. [Set up API integrations](api-reference.html) for your tools
-4. [Check troubleshooting guide](troubleshooting.html) if issues arise
+2. [Explore the dashboards](../monitoring/dashboards.html) to verify everything is working
+3. [Set up API integrations](../api/api-reference.html) for your tools
+4. [Check troubleshooting guide](../../troubleshooting.html) if issues arise

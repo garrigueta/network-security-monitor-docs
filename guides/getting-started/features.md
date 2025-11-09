@@ -285,6 +285,6 @@ To explore these features:
 
 For detailed documentation on each feature, see:
 - [Components Guide](components.html)
-- [API Reference](api-reference.html)
-- [Dashboard Guide](dashboards.html)
-- [Configuration](configuration.html)
+- [API Reference](../api/api-reference.html)
+- [Dashboard Guide](../monitoring/dashboards.html)
+- [Configuration](../deployment/configuration.html)

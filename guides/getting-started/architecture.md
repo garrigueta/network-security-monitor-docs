@@ -484,5 +484,5 @@ helm-chart/
 
 - [Components Guide](components.html) - Detailed component docs
 - [Features Overview](features.html) - Complete functionality
-- [Configuration](configuration.html) - Configuration options
-- [API Endpoints](endpoints.html) - Full API reference
+- [Configuration](../deployment/configuration.html) - Configuration options
+- [API Endpoints](../api/endpoints.html) - Full API reference

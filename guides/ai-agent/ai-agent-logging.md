@@ -347,4 +347,4 @@ mv /mnt/ssd-logs/ai-agent/actions.log.* /mnt/archive/
 
 - [Configuration](ai-agent-configuration.html) - Full configuration reference
 - [API Reference](ai-agent-api.html) - API endpoints
-- [Troubleshooting](troubleshooting.html) - Common issues
+- [Troubleshooting](../../troubleshooting.html) - Common issues

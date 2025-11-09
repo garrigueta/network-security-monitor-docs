@@ -9,7 +9,7 @@ A comprehensive security monitoring platform designed to detect, analyze, and re
 
 ## 🚀 Quick Start
 
-**[Get Started](getting-started.html)** | **[View on GitHub](https://github.com/garrigueta/network-security-monitor)**
+**[Get Started](guides/getting-started/getting-started.html)** | **[View on GitHub](https://github.com/garrigueta/network-security-monitor)**
 
 ---
 

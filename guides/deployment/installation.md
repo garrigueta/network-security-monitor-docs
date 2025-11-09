@@ -374,7 +374,7 @@ kubectl logs -n network-security deployment/ai-agent | grep -i ollama
 
 If you encounter issues:
 
-1. Check the [Troubleshooting Guide](troubleshooting.html)
+1. Check the [Troubleshooting Guide](../../troubleshooting.html)
 2. Review logs: `make logs POD=<pod-name>`
 3. Join our community discussions
 4. [Report issues on GitHub](https://github.com/garrigueta/network-security-monitor/issues)
@@ -384,6 +384,6 @@ If you encounter issues:
 After successful installation:
 
 1. [Configure your deployment](configuration.html)
-2. [Explore the dashboards](dashboards.html)
-3. [Set up API integrations](api-reference.html)
-4. [Review troubleshooting guide](troubleshooting.html)
+2. [Explore the dashboards](../monitoring/dashboards.html)
+3. [Set up API integrations](../api/api-reference.html)
+4. [Review troubleshooting guide](../../troubleshooting.html)

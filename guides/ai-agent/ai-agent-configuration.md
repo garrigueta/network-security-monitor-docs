@@ -325,4 +325,4 @@ CACHE_TTL_SECONDS=600
 
 - [API Reference](ai-agent-api.html) - API endpoints
 - [Logging System](ai-agent-logging.html) - Logging details
-- [Getting Started](getting-started.html) - Installation guide
+- [Getting Started](../getting-started/getting-started.html) - Installation guide

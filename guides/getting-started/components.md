@@ -319,7 +319,7 @@ flowchart LR
 
 ## Next Steps
 
-- [Installation Guide](installation.html) - Deploy all components
-- [Configuration](configuration.html) - Customize your setup
-- [Dashboards](dashboards.html) - Explore the visualization options
-- [API Reference](api-reference.html) - Integrate with the AI Agent
+- [Installation Guide](../deployment/installation.html) - Deploy all components
+- [Configuration](../deployment/configuration.html) - Customize your setup
+- [Dashboards](../monitoring/dashboards.html) - Explore the visualization options
+- [API Reference](../api/api-reference.html) - Integrate with the AI Agent

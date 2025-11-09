@@ -64,6 +64,6 @@ The AI Agent is a key component that:
 
 ## Getting Started
 
-See the [Getting Started Guide](getting-started.html) for installation instructions.
+See the [Getting Started Guide](../getting-started/getting-started.html) for installation instructions.
 
 For detailed API documentation, see [AI Agent API Reference](ai-agent-api.html).

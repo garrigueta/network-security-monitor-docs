@@ -565,5 +565,5 @@ curl -H "X-API-Key: your-secret-key-here" http://<NODE_IP>:8080/analyze/honeypot
 
 - View interactive documentation: `http://<NODE_IP>:8080/docs`
 - Download OpenAPI spec: `http://<NODE_IP>:8080/openapi.yaml`
-- See [Features Overview](features.html) for complete functionality list
-- Check [AI Agent Documentation](ai-agent.html) for AI engine details
+- See [Features Overview](../getting-started/features.html) for complete functionality list
+- Check [AI Agent Documentation](../ai-agent/ai-agent.html) for AI engine details

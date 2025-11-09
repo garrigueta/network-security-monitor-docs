@@ -417,7 +417,7 @@ Create reusable dashboard templates:
 
 ## Next Steps
 
-- [Configure alerts](configuration.html#alert-configuration) for automated notifications
-- [Explore the API](api-reference.html) for programmatic dashboard creation
-- [Set up monitoring](troubleshooting.html) for dashboard health
-- [Integrate with external tools](api-reference.html#integration-examples) for enhanced workflows
+- [Configure alerts](../deployment/configuration.html#alert-configuration) for automated notifications
+- [Explore the API](../api/api-reference.html) for programmatic dashboard creation
+- [Set up monitoring](../../troubleshooting.html) for dashboard health
+- [Integrate with external tools](../api/api-reference.html#integration-examples) for enhanced workflows
