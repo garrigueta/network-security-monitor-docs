@@ -99,7 +99,115 @@ td {
   background: #484f58;
 }
 
+/* Sidebar Navigation */
+.container {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+.sidebar {
+  width: 250px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.sidebar-header h3 {
+  margin: 0 0 1rem 0;
+  color: #58a6ff;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 0.5rem;
+}
+
+.sidebar-section {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-section h4 {
+  margin: 0 0 0.5rem 0;
+  color: #f0f6fc;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.sidebar-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-section li {
+  margin: 0;
+}
+
+.sidebar-section a {
+  display: block;
+  padding: 0.4rem 0.5rem;
+  color: #8b949e;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.sidebar-section a:hover {
+  background: #161b22;
+  color: #58a6ff;
+  padding-left: 0.8rem;
+}
+
+.sidebar-section a.active {
+  background: #161b22;
+  color: #58a6ff;
+  font-weight: 600;
+}
+
+.sidebar-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #30363d;
+}
+
+.sidebar-footer .home-link {
+  display: block;
+  padding: 0.5rem;
+  color: #8b949e;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.sidebar-footer .home-link:hover {
+  background: #161b22;
+  color: #58a6ff;
+}
+
+#main_content {
+  flex: 1;
+  min-width: 0;
+}
+
 /* Responsive improvements */
+@media (max-width: 992px) {
+  .sidebar {
+    display: none;
+  }
+  
+  .container {
+    display: block;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 10px;
@@ -109,5 +217,38 @@ td {
     display: block;
     margin: 5px 0;
     text-align: center;
+  }
+}
+
+/* Mobile menu toggle button */
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #21262d;
+  border: 1px solid #30363d;
+  color: #58a6ff;
+  padding: 12px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 992px) {
+  .sidebar-toggle {
+    display: block;
+  }
+  
+  .sidebar.mobile-visible {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    max-height: 100vh;
+    z-index: 999;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.4);
   }
 }

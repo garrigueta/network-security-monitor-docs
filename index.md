@@ -80,24 +80,38 @@ make all
 
 This will build all container images and deploy the Helm chart to your Kubernetes cluster.
 
-## Documentation Index
+## 📚 Documentation
 
-### Getting Started
-- [Installation Guide](installation.html) - Complete setup instructions
-- [Getting Started](getting-started.html) - Quick start tutorial
-- [Configuration](configuration.html) - Customize your deployment
+### 🚀 Getting Started
+- [**Quick Start Guide**](guides/getting-started/getting-started.html) - Start monitoring in minutes
+- [**Features Overview**](guides/getting-started/features.html) - 20+ platform capabilities
+- [**Architecture**](guides/getting-started/architecture.html) - System design and data flow
+- [**Components**](guides/getting-started/components.html) - Component overview
 
-### System Overview
-- [Features Overview](features.html) - **NEW:** Complete functionality index with 20+ features
-- [Architecture](architecture.html) - **NEW:** System architecture and data flow
-- [Components](components.html) - Learn about each system component
-- [Dashboards](dashboards.html) - Explore the security visualizations
+### 🚢 Deployment
+- [**Installation Guide**](guides/deployment/installation.html) - Complete setup instructions
+- [**Configuration**](guides/deployment/configuration.html) - Customize your deployment
 
-### API & Integration
-- [API Endpoints](endpoints.html) - **NEW:** Complete endpoint reference with examples
-- [API Reference](api-reference.html) - Integration examples and client libraries
-- [AI Agent](ai-agent.html) - AI-powered threat analysis and automation
-- [AI Agent API](ai-agent-api.html) - AI Agent specific API documentation
+### 📊 Monitoring & Dashboards
+- [**Dashboards**](guides/monitoring/dashboards.html) - 3 pre-built security dashboards
+- [**Dashboard Roadmap**](guides/monitoring/dashboard-roadmap.html) - Future enhancements
+
+### 🤖 AI Agent
+- [**AI Agent Overview**](guides/ai-agent/ai-agent.html) - AI-powered threat analysis
+- [**API Documentation**](guides/ai-agent/ai-agent-api.html) - AI agent API reference
+- [**Attack Patterns**](guides/ai-agent/ai-agent-attack-patterns.html) - Detection patterns
+- [**Automation**](guides/ai-agent/ai-agent-automation.html) - Automated analysis
+- [**Configuration**](guides/ai-agent/ai-agent-configuration.html) - AI agent settings
+- [**Logging**](guides/ai-agent/ai-agent-logging.html) - Log management
+
+### 🔌 API Reference
+- [**API Endpoints**](guides/api/endpoints.html) - Complete endpoint reference (25+ endpoints)
+- [**API Integration**](guides/api/api-reference.html) - Integration examples and SDKs
+
+### 🛠️ Additional Resources
+- [**📖 Quick Reference**](quick-reference.html) - Fast lookup guide for common tasks
+- [**Troubleshooting**](troubleshooting.html) - Common issues and solutions
+- [**Contributing**](contributing.html) - How to contribute to the project
 
 ### Operations
 - [Troubleshooting](troubleshooting.html) - Common issues and solutions

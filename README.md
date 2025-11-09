@@ -6,16 +6,40 @@ This repository contains the comprehensive documentation for the [Network Securi
 
 Visit the documentation site: **https://garrigueta.github.io/network-security-monitor-docs**
 
-## 🚀 Quick Start
+## 🎯 Quick Navigation
 
-The documentation covers:
+### 🚀 Getting Started
+- **[Quick Start Guide](https://garrigueta.github.io/network-security-monitor-docs/guides/getting-started/getting-started.html)** - Get up and running
+- **[Features](https://garrigueta.github.io/network-security-monitor-docs/guides/getting-started/features.html)** - 20+ platform capabilities
+- **[Architecture](https://garrigueta.github.io/network-security-monitor-docs/guides/getting-started/architecture.html)** - System design
+- **[Components](https://garrigueta.github.io/network-security-monitor-docs/guides/getting-started/components.html)** - Component overview
 
-- **[Getting Started](https://garrigueta.github.io/network-security-monitor-docs/getting-started.html)** - Installation and setup
-- **[Components](https://garrigueta.github.io/network-security-monitor-docs/components.html)** - System architecture overview
-- **[Configuration](https://garrigueta.github.io/network-security-monitor-docs/configuration.html)** - Customization options
-- **[Dashboards](https://garrigueta.github.io/network-security-monitor-docs/dashboards.html)** - Security visualization guides
-- **[API Reference](https://garrigueta.github.io/network-security-monitor-docs/api-reference.html)** - AI Agent API documentation
-- **[Troubleshooting](https://garrigueta.github.io/network-security-monitor-docs/troubleshooting.html)** - Common issues and solutions
+### 🚢 Deployment
+- **[Installation](https://garrigueta.github.io/network-security-monitor-docs/guides/deployment/installation.html)** - Complete setup guide
+- **[Configuration](https://garrigueta.github.io/network-security-monitor-docs/guides/deployment/configuration.html)** - Customize deployment
+
+### 📊 Monitoring
+- **[Dashboards](https://garrigueta.github.io/network-security-monitor-docs/guides/monitoring/dashboards.html)** - 3 pre-built dashboards
+- **[Roadmap](https://garrigueta.github.io/network-security-monitor-docs/guides/monitoring/dashboard-roadmap.html)** - Future features
+
+### 🤖 AI Agent
+- **[Overview](https://garrigueta.github.io/network-security-monitor-docs/guides/ai-agent/ai-agent.html)** - AI-powered analysis
+- **[API Docs](https://garrigueta.github.io/network-security-monitor-docs/guides/ai-agent/ai-agent-api.html)** - AI agent API
+- **[Attack Patterns](https://garrigueta.github.io/network-security-monitor-docs/guides/ai-agent/ai-agent-attack-patterns.html)** - Detection patterns
+- **[Automation](https://garrigueta.github.io/network-security-monitor-docs/guides/ai-agent/ai-agent-automation.html)** - Scheduled reports
+
+### 🔌 API Reference
+- **[Endpoints](https://garrigueta.github.io/network-security-monitor-docs/guides/api/endpoints.html)** - 25+ API endpoints
+- **[Integration](https://garrigueta.github.io/network-security-monitor-docs/guides/api/api-reference.html)** - Integration examples
+
+### 🛠️ Resources
+- **[📖 Quick Reference](https://garrigueta.github.io/network-security-monitor-docs/quick-reference.html)** - Fast lookup guide
+- **[Troubleshooting](https://garrigueta.github.io/network-security-monitor-docs/troubleshooting.html)** - Common issues
+- **[Contributing](https://garrigueta.github.io/network-security-monitor-docs/contributing.html)** - How to contribute
+
+## 📁 Documentation Structure
+
+The documentation is organized into logical sections with sidebar navigation and breadcrumbs. See [STRUCTURE.md](STRUCTURE.md) for detailed folder organization.
 
 ## 🛠 Local Development
 

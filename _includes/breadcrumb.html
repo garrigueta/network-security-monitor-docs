@@ -1,0 +1,47 @@
+{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+<nav class="breadcrumb">
+  <a href="{{ site.baseurl }}/">Home</a>
+  {% for crumb in crumbs offset: 1 %}
+    {% if crumb != '' %}
+      {% if forloop.last %}
+        <span class="separator">›</span>
+        <span class="current">{{ page.title | default: crumb | replace: '-', ' ' | capitalize }}</span>
+      {% else %}
+        <span class="separator">›</span>
+        <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace: '-', ' ' | capitalize }}</a>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</nav>
+
+<style>
+.breadcrumb {
+  margin-bottom: 2rem;
+  padding: 0.75rem 1rem;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  color: #58a6ff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  color: #79c0ff;
+  text-decoration: underline;
+}
+
+.breadcrumb .separator {
+  margin: 0 0.5rem;
+  color: #8b949e;
+}
+
+.breadcrumb .current {
+  color: #f0f6fc;
+  font-weight: 600;
+}
+</style>

@@ -28,12 +28,6 @@ repository: garrigueta/network-security-monitor-docs
 # Navigation
 header_pages:
   - index.md
-  - getting-started.md
-  - components.md
-  - installation.md
-  - configuration.md
-  - api-reference.md
-  - dashboards.md
   - troubleshooting.md
   - contributing.md
 
@@ -41,7 +35,7 @@ header_pages:
 collections:
   guides:
     output: true
-    permalink: /:collection/:name/
+    permalink: /:collection/:path/
 
 # Plugins
 plugins:
@@ -67,4 +61,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules/
+  - vendor/
   - vendor/
